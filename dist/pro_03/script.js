@@ -51,3 +51,14 @@ GTbtn.addEventListener("click", () => {
 
     passOut.value = password;
 });
+
+
+copyBtn.addEventListener("click", () => {
+    const newEle = document.createElement("textarea");
+    newEle.value = passOut.value;
+    document.body.appendChild(newEle);
+    newEle.select();
+    document.execCommand('copy');
+    alert("password comied");
+    newEle.remove();
+})
