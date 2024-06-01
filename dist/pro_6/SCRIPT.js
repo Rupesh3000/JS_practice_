@@ -56,4 +56,52 @@ window.addEventListener("load", () => {
     year.innerHTML = newDate.getFullYear();
 })
 
-console.log(newDate);
+
+
+
+
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// counter 
+
+
+const count = document.querySelector(".count");
+const btnIncrease = document.querySelector(".btn-increase");
+const btnReset = document.querySelector(".btn-resate");
+const btnDecrease = document.querySelector(".btn-decrease");
+
+
+// let counter = 0;
+
+// btnIncrease.addEventListener("click", () => {
+//     counter++;
+//     count.innerHTML = counter;
+// })
+// btnReset.addEventListener("click", () => {
+//     counter = 0;
+//     count.innerHTML = counter;
+// })
+// btnDecrease.addEventListener("click", () => {
+//     counter--;
+//     count.innerHTML = counter;
+// })
+
+
+
+let counter = 0;
+
+function updateCounter(change) {
+    counter = counter + change;
+    count.innerHTML = counter;
+}
+
+btnIncrease.addEventListener("click", () => updateCounter(1));
+btnReset.addEventListener("click", () => {
+    counter = 0;
+    count.innerHTML = counter;
+});
+btnDecrease.addEventListener("click", () => updateCounter(-1));

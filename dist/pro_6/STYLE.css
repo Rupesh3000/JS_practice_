@@ -17,6 +17,7 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: black;
+    flex-wrap: wrap;
 }
 
 .multiplication {
@@ -99,4 +100,35 @@ input {
     align-items: center;
     justify-content: center;
     font-size: 24px;
+}
+
+.counter {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(19, 43, 78);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.counter h2 {
+    font-size: 30px;
+   
+
+}
+.counter h1 {
+    font-size: 50px;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.counter .buttons button {
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 10px;
 }
