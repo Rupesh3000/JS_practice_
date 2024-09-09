@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-black ">
+    <div class=" contaienr w-screen h-screen relative p-10 flex gap-8">
+
+
+
+        <!-- Qr-generator -->
+        <div class="qr-box w-80 h-fit bg-fuchsia-600 p-4 rounded-xl flex flex-col items-center gap-2">
+            <h1 class="text-2xl font-bold ">QR Generator</h1>
+            <input type="text" id="qr-input" class="p-1 rounded">
+            <button id="qr-btn">Clikc..!</button>
+            <img src="" alt="" id="qr-img" class="w-fit h-fit ">
+        </div>
+
+        <!-- Dice Roll Simulator -->
+        <div class="h-64 w-80 bg-red-900 text-center rounded-xl p-4 ">
+            <h1 class="text-2xl font-bold text-white">Dice Roll</h1>
+            <div class="dice my-7 text-8xl mx-1 ">&#9856</div>
+            <button class="dice-btn bg-orange-500 hover:bg-orange-700 text-white font-bold py-1 px-9 rounded">
+                Roll
+            </button>
+        </div>
+
+        <!-- Background Color -->
+        <div class=" backColor w-ful  flex gap-4 z-50 absolute bottom-11 left-1/2 transform -translate-x-1/2">
+            <button class="backColors bg-[#39e0e6]  border-white border-2  py-3 px-8 rounded" id="#39e0e6"></button>
+            <button class="backColors bg-[#60e035] rounded border-white border-2  py-3 px-8 " id="#60e035"></button>
+            <button class="backColors bg-[#3091ce]  rounded border-white border-2  py-3 px-8 " id="#3091ce"></button>
+            <button class="backColors bg-[#e05a2e] rounded border-white border-2  py-3 px-8 " id="#e05a2e"></button>
+            <button class="backColors bg-[#582e7c] rounded border-white border-2  py-3 px-8 " id="#582e7c"></button>
+            <button class="backColors bg-[#3b95e4] rounded border-white border-2  py-3 px-8 " id="#3b95e4"></button>
+            <button class="backColors bg-[#3b3ee4] rounded border-white border-2  py-3 px-8  " id="#3b3ee4"></button>
+            <button class="backColors bg-[#000] rounded border-white border-2  py-3 px-8" id="#000"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
