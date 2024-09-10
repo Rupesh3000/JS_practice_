@@ -40,3 +40,13 @@ diceBtn.addEventListener("click", () => {
 })
 
 
+// calculator
+
+const calRusult = document.getElementById("result")
+const calBtns = document.querySelectorAll(".cal-btn")
+
+calBtns.forEach((btns) => {
+    btns.addEventListener("click", (btn) => {
+        console.log(btn.target.id);
+    })
+})
