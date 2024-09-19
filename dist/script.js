@@ -42,11 +42,33 @@ diceBtn.addEventListener("click", () => {
 
 // calculator
 
-const calRusult = document.getElementById("result")
+// const calRusult = document.getElementById("result")
 const calBtns = document.querySelectorAll(".cal-btn")
 
-calBtns.forEach((btns) => {
-    btns.addEventListener("click", (btn) => {
-        console.log(btn.target.id);
-    })
-})
+// calBtns.forEach((btns) => {
+//     btns.addEventListener("click", (btn) => {
+//         console.log(btn.target.id);
+//     })
+
+    
+// })
+
+
+let calculation = '';
+const resultElement = document.getElementById('result'); // Add an ID to your result input field
+
+
+calBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        const btnValue = e.target.id;
+
+        if (btnValue === "clear") {
+            calculation = "";
+        } else if (btnValue === "=") {
+            calculation = eval(calculation);
+        } else {
+            calculation = calculation + btnValue
+        }
+        resultElement.value = calculation
+    });
+});
