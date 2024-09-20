@@ -41,23 +41,9 @@ diceBtn.addEventListener("click", () => {
 
 
 // calculator
-
-// const calRusult = document.getElementById("result")
 const calBtns = document.querySelectorAll(".cal-btn")
-
-// calBtns.forEach((btns) => {
-//     btns.addEventListener("click", (btn) => {
-//         console.log(btn.target.id);
-//     })
-
-    
-// })
-
-
-let calculation = '';
 const resultElement = document.getElementById('result'); // Add an ID to your result input field
-
-
+let calculation = '';
 calBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         const btnValue = e.target.id;
@@ -72,3 +58,14 @@ calBtns.forEach((btn) => {
         resultElement.value = calculation
     });
 });
+
+
+// Age calculation 
+
+
+const dob = document.getElementById("dob");
+const Agebtn = document.getElementById("age-btn");
+
+let age = document.getElementById("age")
+
+console.log(dob,Agebtn, age);
