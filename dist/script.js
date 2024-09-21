@@ -63,9 +63,32 @@ calBtns.forEach((btn) => {
 // Age calculation 
 
 
-const dob = document.getElementById("dob");
+const birthdayEl = document.getElementById("dob");
 const Agebtn = document.getElementById("age-btn");
 
-let age = document.getElementById("age")
+let result = document.getElementById("age")
 
-console.log(dob,Agebtn, age);
+const calculateAge = () => {
+    const dobValue = birthdayEl.value;
+    if (dobValue === "") {
+        alert("please inter the your DOB")
+    } else {
+        const age = getAge(dobValue)
+        result.innerText = `Your age is ${age} ${age>1?"years":"year"} old`
+    }
+}
+
+const getAge = (dobValue) => {
+    const currentDate = new Date()
+    const birhdayDate = new Date(dobValue)
+    const age = currentDate.getFullYear() - birhdayDate.getFullYear()
+    const month = currentDate.getMonth() - birhdayDate.getMonth()
+    if (month<0 || (month === 0 && currentDate.getDate() < birhdayDate.getDate())) {
+        age--
+    }
+
+return age
+
+}
+
+Agebtn.addEventListener("click", calculateAge)
