@@ -74,7 +74,7 @@ const calculateAge = () => {
         alert("please inter the your DOB")
     } else {
         const age = getAge(dobValue)
-        result.innerText = `Your age is ${age} ${age>1?"years":"year"} old`
+        result.innerText = `Your age is ${age} ${age > 1 ? "years" : "year"} old`
     }
 }
 
@@ -83,11 +83,11 @@ const getAge = (dobValue) => {
     const birhdayDate = new Date(dobValue)
     const age = currentDate.getFullYear() - birhdayDate.getFullYear()
     const month = currentDate.getMonth() - birhdayDate.getMonth()
-    if (month<0 || (month === 0 && currentDate.getDate() < birhdayDate.getDate())) {
+    if (month < 0 || (month === 0 && currentDate.getDate() < birhdayDate.getDate())) {
         age--
     }
 
-return age
+    return age
 
 }
 
@@ -97,14 +97,18 @@ Agebtn.addEventListener("click", calculateAge)
 
 // Weather app 
 
-const userInput = document.getElementsByClassName("weather-input");
-const inpuBtn = document.getElementById("input-search-btn");
+const userInput = document.getElementById("weather-input");
+const inputBtn = document.getElementById("input-search-btn");
 
-const temp = document.getElementsByClassName("temp");
-const city = document.getElementsByClassName("city");
+const temp = document.getElementById("temp");
+const city = document.getElementById("city");
 
-const humidity = document.getElementsByClassName("humidity");
-const wind = document.getElementsByClassName("wind");
+const humidity = document.getElementById("humidity");
+const wind = document.getElementById("wind");
 
-console.log(inpuBtn);
+inputBtn.addEventListener("click", () => {
+    const userInputValue = userInput.value.trim();
+    const demoApi = fetch(`https://jsonplaceholder.typicode.com/todos/`);
+
+});
 
