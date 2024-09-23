@@ -122,23 +122,23 @@
       <img src="/dist/weather_back.jpg" alt="" class=" top-0 left-0 w-full h-full object-cover">
 
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/12 h-fit bg-black rounded-lg p-5">
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/12 h-fit bg-[rgba(0,0,0,0.35)]  rounded-lg py-6 px-5">
         <h1 class="text-white text-center text-3xl mb-4 font-bold">Weather Web App</h1>
         <div class="serach-bar flex gap-3 justify-center w-full ">
-          <input type="text" placeholder="Search..." class="w-full md:w-80  py-1 rounded-full pl-10" />
-          <i class="ri-search-line text-xl bg-white px-3 py-1 rounded-full "></i>
+          <input type="text" placeholder="Search..." class=" weather-input w-full md:w-80  py-1 rounded-full pl-10" />
+          <i class="ri-search-line text-xl bg-white px-3 py-1 rounded-full cursor-pointer " id="input-search-btn"></i>
         </div>
         <div class="weather flex flex-col items-center gap-2">
           <img src="/dist/sun_img.png" alt="" class="w-48 h-48">
-          <h1 class="text-white text-4xl">22°C</h1>
-          <h1 class="text-white text-3xl">New York</h1>
+          <h1 class="text-white text-4xl temp">22°C</h1>
+          <h1 class="text-white text-3xl city">New York</h1>
 
           <div class="details h-fit text-white w-full flex justify-between items-center mt-4">
             <div class="col-humidity flex items-center gap-2">
               <i class="ri-water-percent-line text-4xl"></i>
               <div class="">
                 <p class="humidity text-xl">50%</p>
-                <p class="text-xl">Humidity</p>
+                <p class="text-sm">Humidity</p>
               </div>
             </div>
 
@@ -146,7 +146,7 @@
               <i class="ri-windy-line text-4xl"></i>
               <div class="">
                 <p class="wind text-xl">14 km/h</p>
-                <p class="text-xl">Wind</p>
+                <p class="text-sm">Wind Speed</p>
               </div>
             </div>
 

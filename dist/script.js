@@ -92,3 +92,19 @@ return age
 }
 
 Agebtn.addEventListener("click", calculateAge)
+
+
+
+// Weather app 
+
+const userInput = document.getElementsByClassName("weather-input");
+const inpuBtn = document.getElementById("input-search-btn");
+
+const temp = document.getElementsByClassName("temp");
+const city = document.getElementsByClassName("city");
+
+const humidity = document.getElementsByClassName("humidity");
+const wind = document.getElementsByClassName("wind");
+
+console.log(inpuBtn);
+
