@@ -113,63 +113,82 @@
       </div>
     </div>
 
-    <!-- row-two  -->
 
+    <!-- row-two  -->
 
     <!-- Weather App  -->
 
-    <div class="row-weather-cotainer w-full h-full relative">
-      <img src="/dist/weather_back.jpg" alt="" class=" top-0 left-0 w-full h-full object-cover">
+    <div class="row-cotainer w-full h-full relative">
+      <img src="/dist/weather_back.jpg" alt="" class="w-full h-full object-cover">
 
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/12 h-fit bg-[rgba(0,0,0,0.35)]  rounded-lg py-6 px-5">
-        <h1 class="text-white text-center text-3xl mb-4 font-bold">Weather Web App</h1>
-        <div class="serach-bar flex gap-3 justify-center w-full ">
-          <input type="text" placeholder="Search..." class=" w-full md:w-80  py-1 rounded-full pl-10" id="weather-input"/>
-          <i class="ri-search-line text-xl bg-white px-3 py-1 rounded-full cursor-pointer " id="input-search-btn"></i>
-        </div>
-        <div class="weather flex flex-col items-center gap-2">
-          <img src="/dist/sun_img.png" alt="" class="w-48 h-48">
-          <h1 class="text-white text-4xl " id="temp">22°C</h1>
-          <h1 class="text-white text-3xl " id="city">New York</h1>
-
-          <div class="details h-fit text-white w-full flex justify-between items-center mt-4">
-            <div class="col-humidity flex items-center gap-2">
-              <i class="ri-water-percent-line text-4xl"></i>
-              <div class="">
-                <p class=" text-xl" id="humidity">50%</p>
-                <p class="text-sm">Humidity</p>
-              </div>
-            </div>
-
-            <div class="col-wind flex items-center gap-2">
-              <i class="ri-windy-line text-4xl"></i>
-              <div class="">
-                <p class=" text-xl" id="wind">14 km/h</p>
-                <p class="text-sm">Wind Speed</p>
-              </div>
-            </div>
-
+        class="overflow-box absolute w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center  justify-evenly">
+        <div class="w-3/12 h-fit bg-[rgba(0,0,0,0.35)]  rounded-lg py-6 px-5">
+          <h1 class="text-white text-center text-3xl mb-4 font-bold">Weather Web App</h1>
+          <div class="serach-bar flex gap-3 justify-center w-full ">
+            <input type="text" placeholder="Search..." class=" w-full md:w-80  py-1 rounded-full pl-10"
+              id="weather-input" />
+            <i class="ri-search-line text-xl bg-white px-3 py-1 rounded-full cursor-pointer " id="input-search-btn"></i>
           </div>
+          <div class="weather flex flex-col items-center gap-2">
+            <img src="/dist/sun_img.png" alt="" class="w-48 h-48">
+            <h1 class="text-white text-4xl " id="temp">22°C</h1>
+            <h1 class="text-white text-3xl " id="city">New York</h1>
 
+            <div class="details h-fit text-white w-full flex justify-between items-center mt-4">
+              <div class="col-humidity flex items-center gap-2">
+                <i class="ri-water-percent-line text-4xl"></i>
+                <div class="">
+                  <p class=" text-xl" id="humidity">50%</p>
+                  <p class="text-sm">Humidity</p>
+                </div>
+              </div>
 
+              <div class="col-wind flex items-center gap-2">
+                <i class="ri-windy-line text-4xl"></i>
+                <div class="">
+                  <p class=" text-xl" id="wind">14 km/h</p>
+                  <p class="text-sm">Wind Speed</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
-      </div>
+        <!-- Digital clock -->
 
-      <div class="backColor w-ful  flex gap-4 z-auto  bottom-11 left-1/2 transform -translate-x-1/2 fixed ">
-        <button class="backColors bg-[#39e0e6]  border-white border-2  py-3 px-8 rounded" id="#39e0e6"></button>
-        <button class="backColors bg-[#60e035] rounded border-white border-2  py-3 px-8 " id="#60e035"></button>
-        <button class="backColors bg-[#3091ce]  rounded border-white border-2  py-3 px-8 " id="#3091ce"></button>
-        <button class="backColors bg-[#e05a2e] rounded border-white border-2  py-3 px-8 " id="#e05a2e"></button>
-        <button class="backColors bg-[#582e7c] rounded border-white border-2  py-3 px-8 " id="#582e7c"></button>
-        <button class="backColors bg-[#3b95e4] rounded border-white border-2  py-3 px-8 " id="#3b95e4"></button>
-        <button class="backColors bg-[#3b3ee4] rounded border-white border-2  py-3 px-8  " id="#3b3ee4"></button>
-        <button class="backColors bg-[#000] rounded border-white border-2  py-3 px-8" id="#000"></button>
+        <div class="clock bg-[rgba(0,0,0,0.35)]  w-80 h-80 rounded-full relative">
+
+          <div class="numbers text-white text-xl font-bold">
+            <div class="twelve absolute top-3 left-1/2 transform -translate-x-1/2 ">12</div>
+            <div class="three absolute right-3 top-1/2 transform  -translate-y-1/2">3</div>
+            <div class="six absolute bottom-3 left-1/2 transform -translate-x-1/2">6</div>
+            <div class="nine absolute left-3 top-1/2 transform -translate-y-1/2">9</div>
+          </div>
+          <div class="arrows flex w-full h-full justify-center items-center">
+            <div class="hour bg-white w-[5px] absolute h-[80px] rotate-45 origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]"></div>
+            <div class="min bg-white w-[5px] absolute h-[100px] rotate-180 origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]"></div>
+            <div class="sec bg-white w-[5px] absolute h-[115px] rotate-2 origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]"></div>
+          </div>
+        </div>
       </div>
 
     </div>
-    <script src="script.js"></script>
+
+    <div class="backColor w-ful  flex gap-4 z-auto  bottom-11 left-1/2 transform -translate-x-1/2 fixed ">
+      <button class="backColors bg-[#39e0e6]  border-white border-2  py-3 px-8 rounded" id="#39e0e6"></button>
+      <button class="backColors bg-[#60e035] rounded border-white border-2  py-3 px-8 " id="#60e035"></button>
+      <button class="backColors bg-[#3091ce]  rounded border-white border-2  py-3 px-8 " id="#3091ce"></button>
+      <button class="backColors bg-[#e05a2e] rounded border-white border-2  py-3 px-8 " id="#e05a2e"></button>
+      <button class="backColors bg-[#582e7c] rounded border-white border-2  py-3 px-8 " id="#582e7c"></button>
+      <button class="backColors bg-[#3b95e4] rounded border-white border-2  py-3 px-8 " id="#3b95e4"></button>
+      <button class="backColors bg-[#3b3ee4] rounded border-white border-2  py-3 px-8  " id="#3b3ee4"></button>
+      <button class="backColors bg-[#000] rounded border-white border-2  py-3 px-8" id="#000"></button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

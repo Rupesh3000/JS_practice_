@@ -570,20 +570,36 @@ video {
   bottom: 2.75rem;
 }
 
-.left-0 {
-  left: 0px;
+.bottom-3 {
+  bottom: 0.75rem;
 }
 
 .left-1\/2 {
   left: 50%;
 }
 
-.top-0 {
-  top: 0px;
+.left-3 {
+  left: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
 }
 
 .top-1\/2 {
   top: 50%;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-1\/2 {
+  bottom: 50%;
 }
 
 .z-auto {
@@ -641,6 +657,90 @@ video {
   height: 100%;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-\[28\] {
+  height: 28;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[112\] {
+  height: 112;
+}
+
+.h-\[1\] {
+  height: 1;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[110px\] {
+  height: 110px;
+}
+
+.h-\[115px\] {
+  height: 115px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[10\] {
+  height: 10;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -670,6 +770,46 @@ video {
   width: 100vw;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-\[3\] {
+  width: 3;
+}
+
+.w-\[7\] {
+  width: 7;
+}
+
+.w-\[7p\] {
+  width: 7p;
+}
+
+.w-\[7px\] {
+  width: 7px;
+}
+
+.w-\[5px\] {
+  width: 5px;
+}
+
+.w-\[6px\] {
+  width: 6px;
+}
+
+.origin-bottom {
+  transform-origin: bottom;
+}
+
+.origin-center {
+  transform-origin: center;
+}
+
+.origin-\[bottom_center\] {
+  transform-origin: bottom center;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -677,6 +817,21 @@ video {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-2 {
+  --tw-rotate: 2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -744,6 +899,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-\[50\%_50\%_0_0\] {
+  border-radius: 50% 50% 0 0;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -802,6 +961,10 @@ video {
   background-color: rgb(224 90 46 / var(--tw-bg-opacity));
 }
 
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.35\)\] {
+  background-color: rgba(0,0,0,0.35);
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -845,34 +1008,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
-  background-color: rgba(255,255,255,0.2);
-}
-
-.bg-\[rgba\(0\2c 255\2c 255\2c 0\.2\)\] {
-  background-color: rgba(0,255,255,0.2);
-}
-
-.bg-\[rgba\(0\2c 0\2c 255\2c 0\.2\)\] {
-  background-color: rgba(0,0,255,0.2);
-}
-
-.bg-\[rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
-  background-color: rgba(0,0,0,0.2);
-}
-
-.bg-\[rgba\(0\2c 0\2c 0\2c 0\.\)\] {
-  background-color: rgba(0,0,0,0.);
-}
-
-.bg-\[rgba\(0\2c 0\2c 0\2c 0\.35\)\] {
-  background-color: rgba(0,0,0,0.35);
-}
-
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
 }
 
 .object-cover {
@@ -1005,14 +1140,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-5 {
-  opacity: 0.05;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .shadow-lg {

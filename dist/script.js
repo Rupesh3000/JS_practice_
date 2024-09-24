@@ -96,7 +96,7 @@ Agebtn.addEventListener("click", calculateAge)
 
 
 // Weather app 
-
+// this app need to login to get api 
 const userInput = document.getElementById("weather-input");
 const inputBtn = document.getElementById("input-search-btn");
 
