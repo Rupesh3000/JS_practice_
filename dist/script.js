@@ -112,3 +112,40 @@ inputBtn.addEventListener("click", () => {
 
 });
 
+
+
+// digital clock 
+
+const hourEl = document.getElementById("hour")
+const minEl = document.getElementById("min")
+const secEl = document.getElementById("sec")
+
+function updateClock(params) {
+    const currentDateTime = new Date()
+    console.log(currentDateTime.toLocaleString());
+
+    // setTimeout(updateClock, 1000);
+    const hour = currentDateTime.getHours()
+    const min = currentDateTime.getMinutes()
+    const sec = currentDateTime.getSeconds()
+
+    const hourDeg = (hour / 12) * 360;
+    // hourEl.style.transform = `rorate(${hourDeg}deg)`;
+    hourEl.style.transform = `rotate(${hourDeg}deg)`;
+    const minDeg = (min / 60) * 360;
+    // hourEl.style.transform = `rorate(${minDeg}deg)`
+    minEl.style.transform = `rotate(${minDeg}deg)`;
+    const secDeg = (sec / 60) * 360;
+    // hourEl.style.transform = `rorate(${secDeg}deg)`
+    secEl.style.transform = `rotate(${secDeg}deg)`;
+
+    // const hourDeg = (hour % 12 + min / 60) * 30; // 30 degrees per hour
+    // hourEl.style.transform = `rotate(${hourDeg}deg)`;
+
+    // const minDeg = (min + sec / 60) * 6; // 6 degrees per minute
+    // minEl.style.transform = `rotate(${minDeg}deg)`;
+
+    // const secDeg = sec * 6; // 6 degrees per second
+    // secEl.style.transform = `rotate(${secDeg}deg)`;
+}
+updateClock()
