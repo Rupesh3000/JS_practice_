@@ -122,9 +122,8 @@ const secEl = document.getElementById("sec")
 
 function updateClock(params) {
     const currentDateTime = new Date()
-    console.log(currentDateTime.toLocaleString());
 
-    // setTimeout(updateClock, 1000);
+    setTimeout(updateClock, 1000);
     const hour = currentDateTime.getHours()
     const min = currentDateTime.getMinutes()
     const sec = currentDateTime.getSeconds()
@@ -149,3 +148,6 @@ function updateClock(params) {
     // secEl.style.transform = `rotate(${secDeg}deg)`;
 }
 updateClock()
+
+
+

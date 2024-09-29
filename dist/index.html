@@ -9,9 +9,9 @@
   <title>Document</title>
 </head>
 
-<body class="bg-black ">
+<body class="bg-slate-800">
   <div class="wrapper">
-    <div class=" row-one w-screen relative p-10 flex gap-8">
+    <div class=" row-one w-screen relative p-10 flex gap-8 flex-wrap items-center">
 
       <!-- Qr-generator -->
       <div class="qr-box w-80 h-fit bg-fuchsia-600 p-4 rounded-xl flex flex-col items-center gap-2">
@@ -95,86 +95,87 @@
 
       </div>
 
-      <!-- Background Color -->
-
-
       <!-- Age Calculator -->
 
-      <div class="w-80 h-80 p-4 bg-white rounded-xl shadow-md">
+      <div class="w-80 h-80 p-4 bg-slate-600 rounded-xl shadow-md">
         <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Age Calculator</h2>
         <div class="flex items-center mb-4 flex-col gap-3">
           <input type="date" id="dob"
-            class=" py-2 pl-7 text-xl text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-400 ">
+            class=" py-2 pl-7 pr-4 text-xl text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-400 ">
           <button
             class="ml-3 py-2 px-3 bg-indigo-500 hover:bg-indigo-700 text-white rounded-lg focus:outline-none focus:ring focus:ring-indigo-400"
             id="age-btn">Calculate</button>
           <p id="age" class="text-xl text-gray-600 text-center font-bold"></p>
         </div>
       </div>
-    </div>
 
+      <!-- weather app  -->
 
-    <!-- row-two  -->
+      <div class="w-3/12 h-fit bg-[rgba(0,0,0,0.35)]  rounded-lg py-6 px-5">
+        <h1 class="text-white text-center text-3xl mb-4 font-bold">Weather Web App</h1>
+        <div class="serach-bar flex gap-3 justify-center w-full ">
+          <input type="text" placeholder="Search..." class=" w-full md:w-80  py-1 rounded-full pl-10"
+            id="weather-input" />
+          <i class="ri-search-line text-xl bg-white px-3 py-1 rounded-full cursor-pointer " id="input-search-btn"></i>
+        </div>
+        <div class="weather flex flex-col items-center gap-2">
+          <img src="/dist/sun_img.png" alt="" class="w-48 h-48">
+          <h1 class="text-white text-4xl " id="temp">22°C</h1>
+          <h1 class="text-white text-3xl " id="city">New York</h1>
 
-    <!-- Weather App  -->
-
-    <div class="row-cotainer w-full h-full relative">
-      <img src="/dist/weather_back.jpg" alt="" class="w-full h-full object-cover">
-
-      <div
-        class="overflow-box absolute w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center  justify-evenly">
-        <div class="w-3/12 h-fit bg-[rgba(0,0,0,0.35)]  rounded-lg py-6 px-5">
-          <h1 class="text-white text-center text-3xl mb-4 font-bold">Weather Web App</h1>
-          <div class="serach-bar flex gap-3 justify-center w-full ">
-            <input type="text" placeholder="Search..." class=" w-full md:w-80  py-1 rounded-full pl-10"
-              id="weather-input" />
-            <i class="ri-search-line text-xl bg-white px-3 py-1 rounded-full cursor-pointer " id="input-search-btn"></i>
-          </div>
-          <div class="weather flex flex-col items-center gap-2">
-            <img src="/dist/sun_img.png" alt="" class="w-48 h-48">
-            <h1 class="text-white text-4xl " id="temp">22°C</h1>
-            <h1 class="text-white text-3xl " id="city">New York</h1>
-
-            <div class="details h-fit text-white w-full flex justify-between items-center mt-4">
-              <div class="col-humidity flex items-center gap-2">
-                <i class="ri-water-percent-line text-4xl"></i>
-                <div class="">
-                  <p class=" text-xl" id="humidity">50%</p>
-                  <p class="text-sm">Humidity</p>
-                </div>
+          <div class="details h-fit text-white w-full flex justify-between items-center mt-4">
+            <div class="col-humidity flex items-center gap-2">
+              <i class="ri-water-percent-line text-4xl"></i>
+              <div class="">
+                <p class=" text-xl" id="humidity">50%</p>
+                <p class="text-sm">Humidity</p>
               </div>
-
-              <div class="col-wind flex items-center gap-2">
-                <i class="ri-windy-line text-4xl"></i>
-                <div class="">
-                  <p class=" text-xl" id="wind">14 km/h</p>
-                  <p class="text-sm">Wind Speed</p>
-                </div>
-              </div>
-
             </div>
+
+            <div class="col-wind flex items-center gap-2">
+              <i class="ri-windy-line text-4xl"></i>
+              <div class="">
+                <p class=" text-xl" id="wind">14 km/h</p>
+                <p class="text-sm">Wind Speed</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Digital clock -->
+      </div>
+      <!-- digital clock  -->
 
-        <div class="clock bg-[rgba(0,0,0,0.35)]  w-80 h-80 rounded-full relative">
+      <div class="clock bg-[rgba(0,0,0,0.35)]  w-80 h-80 rounded-full relative">
 
-          <div class="numbers text-white text-xl font-bold">
-            <div class="twelve absolute top-3 left-1/2 transform -translate-x-1/2 ">12</div>
-            <div class="three absolute right-3 top-1/2 transform  -translate-y-1/2">3</div>
-            <div class="six absolute bottom-3 left-1/2 transform -translate-x-1/2">6</div>
-            <div class="nine absolute left-3 top-1/2 transform -translate-y-1/2">9</div>
+        <div class="numbers text-white text-xl font-bold">
+          <div class="twelve absolute top-3 left-1/2 transform -translate-x-1/2 ">12</div>
+          <div class="three absolute right-3 top-1/2 transform  -translate-y-1/2">3</div>
+          <div class="six absolute bottom-3 left-1/2 transform -translate-x-1/2">6</div>
+          <div class="nine absolute left-3 top-1/2 transform -translate-y-1/2">9</div>
+        </div>
+        <div class="arrows flex w-full h-full justify-center items-center">
+          <div id="hour"
+            class=" bg-white w-[6px] absolute h-[80px] rotate-[200deg] origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]">
           </div>
-          <div class="arrows flex w-full h-full justify-center items-center">
-            <div id="hour" class=" bg-white w-[6px] absolute h-[80px] rotate-[200deg] origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]"></div>
-            <div id="min" class=" bg-white w-[4px] absolute h-[100px] rotate-[180deg] origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]"></div>
-            <div id="sec" class=" bg-white w-[2px] absolute h-[115px] rotate-[211deg] origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]"></div>
+          <div id="min"
+            class=" bg-white w-[4px] absolute h-[100px] rotate-[180deg] origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]">
+          </div>
+          <div id="sec"
+            class=" bg-white w-[2px] absolute h-[115px] rotate-[211deg] origin-[bottom_center] bottom-1/2 rounded-[50%_50%_0_0]">
           </div>
         </div>
       </div>
 
+
+      <!-- to-di list -->
+      <div class="Todo-app w-full md:w-2/5 bg-white pt-10 py-8 pb-16 rounded-xl">
+        <h2 class="text-[#002765]">To-Do List</h2>
+        bt
+      </div>
     </div>
+
+    <!-- Background Color -->
 
     <div class="backColor w-ful  flex gap-4 z-auto  bottom-11 left-1/2 transform -translate-x-1/2 fixed ">
       <button class="backColors bg-[#39e0e6]  border-white border-2  py-3 px-8 rounded" id="#39e0e6"></button>
