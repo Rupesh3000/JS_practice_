@@ -157,7 +157,7 @@ const listContainer = document.getElementById("list-container")
 
 const addTask = () => {
 
-    if(taskInput.value === "") {
+    if (taskInput.value === "") {
         alert("you must write something")
     } else {
         const li = document.createElement('li');
@@ -166,7 +166,7 @@ const addTask = () => {
         listContainer.appendChild(li);
     }
 }
-addBtn.addEventListener("click" ,addTask)
+addBtn.addEventListener("click", addTask)
 
 
 
