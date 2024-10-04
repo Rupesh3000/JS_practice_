@@ -149,5 +149,24 @@ function updateClock(params) {
 }
 updateClock()
 
+// To_Do List 
+
+const taskInput = document.getElementById("task-int")
+const addBtn = document.getElementById("add-btn")
+const listContainer = document.getElementById("list-container")
+
+const addTask = () => {
+
+    if(taskInput.value === "") {
+        alert("you must write something")
+    } else {
+        const li = document.createElement('li');
+        li.className = "relative pl-7 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[#ff5945] before:rounded-full text-lg";
+        li.textContent = taskInput.value;
+        listContainer.appendChild(li);
+    }
+}
+addBtn.addEventListener("click" ,addTask)
+
 
 

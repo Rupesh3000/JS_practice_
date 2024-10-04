@@ -169,9 +169,30 @@
 
 
       <!-- to-di list -->
-      <div class="Todo-app w-full md:w-2/5 bg-white pt-10 py-8 pb-16 rounded-xl">
-        <h2 class="text-[#002765]">To-Do List</h2>
-        bt
+      <div class="Todo-app w-full md:w-2/5 bg-white pt-10 px-8 pb-16 rounded-xl">
+        <h2 class="text-[#002765] mb-5 text-2xl font-bold ">To-Do List</h2>
+        <div class="row flex items-center justify-between bg-slate-200 rounded-[30px] pl-5 mb-6">
+          <input type="text" name="" id="task-int" placeholder="Add Task"
+            class="flex-1 border-none outline-none p-3 font-medium bg-transparent">
+          <button id="add-btn"
+            class="border-none outline-none py-4 px-12 bg-[#ff5945] text-black cursor-pointer rounded-[40px] font-bold">Add
+            Task</button>
+        </div>
+        <ul id="list-container" class="text-xl py-3 pt-2 pb-12 cursor-pointer relative flex flex-col gap-2">
+          <!-- <li
+            class="relative pl-7 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[#ff5945] before:rounded-full">
+            Task 1
+          </li>
+          <li
+            class="relative pl-7 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[#ff5945] before:rounded-full">
+            Task 2
+          </li>
+          <li
+            class="relative pl-7  before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[#ff5945] before:rounded-full">
+            Task 3
+          </li> -->
+
+        </ul>
       </div>
     </div>
 
